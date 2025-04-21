@@ -1,0 +1,728 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Barlow;
+  }
+  
+  li, a, button {
+    font-family: Barlow;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  
+  header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 6%;
+    color: white;
+    background-color: transparent;
+  }
+  
+  .logo {
+    cursor: pointer;
+    margin-right: auto;
+    color: white;
+    transition: all .6s ease 0s;
+  }
+  
+  .logo:hover {
+    cursor: pointer;
+    margin-right: auto;
+    color: #00CCCC;
+    transition: all .6s ease 0s;
+  }
+  
+  .navLinks {
+    list-style: none;
+  }
+  
+  .navLinks li {
+    display: inline-block;
+    padding: 0px 20px;
+  
+  }
+  
+  .navLinks li a {
+    transition: all 0.6s ease 0s;
+    color: white;
+    font-size: 1.25rem ;  
+    
+  }
+  
+  .navLinks li a:hover {
+    transition: all .6s ease 0s;
+    color: #00CCCC;
+  }
+  
+  button {
+    padding: 9px 25px;
+    background-color: #00CCCC;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: 20px;
+  }
+  
+  button:hover {
+    transform: scale(1.2);
+  
+  }
+  
+  body {
+    background: #181129;
+  background: linear-gradient(90deg, rgba(72,0,235,1) 0%, rgba(192,0,203,1) 100%);
+    font-family: Barlow;
+  color: black;
+  }
+  
+  p {
+    padding: 20px;
+  }
+  
+  @font-face {
+      font-family: 'Barlow', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+  }
+  
+  @font-face {
+    font-family: 'Flamenco', cursive;
+      font-style: normal;
+      font-weight: normal;
+  }
+  
+  body.contact {
+  
+  }
+  
+  h1.title {
+    font-family: Barlow;
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+    padding-top: 5vh;
+    padding-bottom: 8vh;
+  }
+  
+  
+  h1.title2 {
+    font-family: Barlow;
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+    padding-top: 2vh;
+    padding-bottom: 8vh;
+  }
+  
+  #courseTitle {
+    font-family: Barlow;
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+    padding-top: 5vh;
+  }
+  
+    
+    
+  .cInfo {
+  padding-top: 50%;
+  text-align: center;
+  color: #00CCCC;
+  scale: 125%;
+  }
+  
+  h1.hText {
+    color: white;
+    padding-bottom: .5rem;
+  }
+  
+  #LIK {
+    color: #012845;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    font-weight: bold;
+  }
+  
+  /*Course*/
+  
+  
+  .courseGrid {
+    width: 95vw;
+    margin-left: 2.5vw;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1vw;
+    
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .courseGrid {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+    }
+  }
+  
+  
+  .courseBox {
+    color: white;  
+    margin-bottom: 30px;
+  
+  }
+  
+  .descBox {
+    grid-column: span 2 / auto;
+    grid-row: span 1 / auto;
+  
+    margin-left: 2%;
+  
+  }
+  
+  .descPicBox {
+    grid-column: span 1 / auto;
+    grid-row: span 1 / auto;
+    background-repeat: no-repeat;
+    margin-right: 2%;
+    border-radius: 50px;
+    background-size: 100% 100%;
+    max-height: 400px;
+    background-image: url(images/codeGraphic.jpg);
+    
+  
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .descBox {
+      grid-column: span 1/ auto;
+    }
+  }
+  
+  
+  li.learn { 
+    list-style-position: inside;
+    font-size: 22px;
+    padding-bottom: 10px;
+  }
+  
+  h1.learn {
+    text-align: left;
+    padding-bottom: 20px;
+  }
+  
+  .learnBox {
+    grid-column: span 1 / auto;
+    grid-row: span 1 / auto;
+    margin-right: 3%;
+    padding-left: 10px;
+  
+  }
+  
+  .learnPic {
+    grid-column: span 2 / auto;
+    grid-row: span 1 / auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(images/KidsCoding1.jpg);
+    margin-left: 3%;
+    border-radius: 50px;
+    
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .learnPic {
+      grid-row: 4 / 5;
+      grid-column: span 1 / auto;
+    }
+  }
+  
+  .titlePic {
+    position: relative;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .waveText {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 64px;
+  }
+  
+  
+  
+  .cPic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+    @keyframes gradient {
+      0% {background-position: 0%;}
+      100% {background-position: 100%;}
+  
+    }
+  
+    h1.homeTitle {
+      color: white;
+      font-weight: bold;
+      font-size: 5rem;
+      padding-top: 3rem;
+  
+    }
+  
+    .homeTitle {
+      font-weight: bold;
+      padding-top: 1rem;
+      text-align: center;
+    }
+    h3.homeTitle {
+      font-size: clamp(1rem, 2rem, 5vw);
+      margin-bottom: 3vh;
+      color: #00CCCC;
+    }
+  
+  
+    .homeLayout {
+      margin-top: 25rem ;
+    }
+    
+    .homeIcon {
+      margin-left: 15rem;
+      float: left;
+    }
+  
+  .homeText { 
+    float:none;
+  }
+  
+  /*Launch Screen*/
+  
+  
+  .launchGrid {
+    margin-top: 4rem;
+    height: 50vh;
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: 1fr;
+    background-color: transparent;
+    grid-gap: 5%;
+    z-index: 100;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 15vh;
+  }
+  
+  .launchBox {
+   background-color: transparent;
+   border-radius: 50px;
+   transition: all 0.3s ease 0s;
+   place-items: center;
+   animation: launchSlide 1.5s ease 0s 1 normal forwards;
+  
+  
+  }
+  
+  .launchBox:hover {
+    background-color: transparent;
+  }
+  
+  @keyframes launchSlide {
+    0%{
+        transform: scale(1) translate(-100vw, 0px);
+        opacity: 1;
+    }
+    80%{
+      transform: scale(1) translate(5vw, 0px);
+      opacity: 1;
+  }
+    100%{
+        transform: scale(1) translate(0px, 0px);
+        opacity: 1;
+    }
+  
+  }
+  
+  
+  .launchClass {
+    background-image: url(images/teachTurq.svg);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 10%;
+  }
+  
+  
+  .launchTutoring {
+    background-image: url(images/videoCallTurq.svg);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 10%;
+  
+  }
+  
+  .launchContact {
+    background-image: url(images/contactUsFinal.svg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 10%;
+  }
+  
+  
+  .launchHeadCourse {
+    padding-top: 60%;
+    text-align: center;
+    color: white;
+  }
+  
+  .launchHeadContact {
+    padding-top: 60%;
+    text-align: center;
+    color: white;
+    
+  
+  }
+  
+  .launchHeadTutor {
+    padding-top: 60%;
+    text-align: center;
+    color: white;
+  }
+  
+  
+  .launchText {
+    padding-top: 5%;
+    text-align: center;
+    color: white;
+  
+  }
+  
+  
+  
+  /*tutoring*/
+  
+  
+  .tutorGrid {
+    margin-left: 2.5vw;
+    width: 95vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+    grid-gap: 3%;
+  border-radius: 50px;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .tutorGrid {
+  
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, 1fr);
+      grid-gap: 0%;
+    }
+  
+  }
+  
+  .tutorBox {
+    color: white;  
+    margin-bottom: 30px;
+    border-radius: 50px;
+    background-color: #00CCCC;
+    animation: langDrop 1s ease 0s 1 normal forwards;
+    opacity: 0;
+    padding-bottom: 1rem;
+  }
+  
+  
+  .scratchBox {
+    grid-column: span 1 / auto;
+    grid-row: span 1 / auto;
+    animation-delay: 0.2s;
+  }
+  
+  .pythonBox {
+    grid-column: span 1 / auto;
+    grid-row: span 1 / auto;
+    animation-delay: .4s;
+  
+  }
+  
+  .javaBox {
+    grid-column: span 1 / auto;
+    grid-row: span 1 / auto;
+    animation-delay: 0.8s;
+  }
+  
+  
+  
+  .longBox {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    animation-delay: 0s;
+  }
+  
+  .htmlBox {
+    grid-column: span 1 / auto;
+    grid-row: span 1 / auto;
+    animation-delay: 0.6s;
+  }
+  
+  .zoomTutorBox {
+    grid-column: span 1 / auto;
+    grid-row: span 1 / auto;
+    background-image: url(images/videocallturq2.svg);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 10%;
+    background-color: transparent;
+    animation-delay: 0.0s;
+  }
+  
+  .payBox {
+    grid-column: span 1 / auto;
+    grid-row: span 1 / auto;
+    background-image: url(images/creditCard2.svg);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 10%;
+    background-color: transparent;
+    animation-delay: 0.2s;
+  
+  }
+  
+  .tutorContactBox {
+    grid-column: span 1 / auto;
+    grid-row: span 1 / auto;
+    background-image: url(images/emailTutor.svg);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-color: transparent;
+    animation-delay: 0.4s;
+  
+  }
+  
+  @keyframes langDrop {
+    0.0%{
+      transform: scale(1) translate(0px, -50vh);
+      opacity: 0;
+  }
+    100%{
+      transform: scale(1) translate(0px, 0px);
+      opacity: 1;
+  }
+  }
+  
+  .langHead {
+    color: white;
+    padding-top: 1rem;
+    text-align: center;
+  }
+  
+  h2.lvl{
+    list-style:none;
+    color: #a8ffff;
+    padding-bottom: 1rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  
+  .langDesc {
+    list-style: disc;
+    color: white;
+    padding-bottom: .5rem;
+    padding-right: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .lvlDesc {
+    list-style: disc;
+    color: white;
+    padding-bottom: .5rem;
+    padding-right: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .zoomDesc {
+    padding-top: 70%;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
+  .payDesc {
+    padding-top: 70%;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
+  .contactDesc {
+    padding-top: 70%;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
+  ul.languageUl {
+    padding-left: 2rem;
+  }
+  
+  .coreInfoGrid {
+    margin-left: 1%;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    position: relative;
+    grid-gap: 3%;
+  border-radius: 50px;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .coreInfoGrid {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-gap: 0%;
+  
+    }
+  }
+  
+  
+  .contactGrid {
+    margin-left: 10vw;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    position: relative;
+    grid-gap: 3%;
+    animation: langDrop 2s ease;
+  
+  }
+  
+  .emailBox {
+    grid-column: span 1/auto;
+    grid-row: span 1/auto;
+  background-image: url("images/emailsTurq.svg");  
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  height: 40vh;
+  }
+  
+  .phoneBox {
+    grid-column: span 1/auto;
+    grid-row: span 1/auto;
+  background-image: url("images/phoneTurq.svg");  
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  height: 40vh;
+  
+  }
+  
+  
+  @media only screen and (max-width: 700px) {
+    .contactGrid {
+  
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+  
+    
+    }
+  }
+  
+  
+  @media only screen and (max-width: 700px) {
+    .emailBox {
+  
+      height: 30vh;
+    }
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .phoneBox {
+      height: 30vh;
+    }
+  }
+  
+  .link{
+    font-weight: bold;
+    color: #00CCCC;
+    font-size: 1.2rem;
+  }
+  
+  
+  /*about me*/
+  .aboutGrid {
+    margin-left: 2.5vw;
+    width: 95vw;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+    grid-gap: 3%;
+  }
+  
+  .aboutDescBox {
+    grid-column: span 7/auto;
+  
+  
+  }
+  
+  .profilePicBox {
+    grid-column: span 3/auto;
+    background-color: #F0E9E7;
+    background-image: url("images/ppicAidan.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:center;
+  clip-path: circle();  
+  width: clamp(300px, 30vw, 400px);
+  
+  
+  
+  }
+  
+  #highlight {
+   color: #00CCCC;
+  }
+  @media only screen and (max-width: 700px) {
+    .aboutGrid {
+  
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-gap: 0%;
+  
+    
+    }
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .profilePicBox {
+  
+      margin-left: 8vw;
+  
+    
+    }
+  }
+  
+  
+  
